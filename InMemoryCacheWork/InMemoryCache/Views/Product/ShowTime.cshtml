@@ -1,10 +1,32 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "ShowTime";
+    var ProductList = ViewBag.ProductList as List<Product>;
 }
 
 <h1>ShowTime</h1>
 <hr /><br />
 <h6>@ViewBag.time</h6>
+<h6>@ViewBag.callback</h6>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>ProductName</th>
+            <th>UnitInStock</th>
+            <th>UnitPrice</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in ProductList)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.ProductName</td>
+                <td>@product.UnitInStock</td>
+                <td>@product.UnitPrice</td>
+            </tr>
+        }
+    </tbody>
+</table>
 
 
