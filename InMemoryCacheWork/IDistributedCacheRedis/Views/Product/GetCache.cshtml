@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "GetCache";
+    var Products = ViewBag.Products as List<Product>;
+}
+
+<h1>GetCache</h1>
+<h6>Product List</h6>
+<hr />
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>ProductName</th>
+            <th>UnitInStock</th>
+            <th>UnitPrice</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Products)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.ProductName</td>
+                <td>@product.UnitInStock</td>
+                <td>@product.UnitPrice</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
