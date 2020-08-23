@@ -1,1 +1,6 @@
-# Asp.NetCore_Cache_InMemory_DistributedCache_Redis
+Bu Proje Dahilinde ImemoryCache, IDistributedCache_Redis ve RedisExchangeApi Konuları Çalışılmıştır.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+	
