@@ -11,6 +11,8 @@ namespace RedisExchangeApi.Web.Controllers
 {
     public class ListTypeController : Controller
     {
+        //Redis ile ilgili notlara Not klasöründeki text ten erişebilirsiniz.
+        
         private readonly RedisService _redisService;
         private readonly IDatabase db;
         private readonly string listName = "Users";
